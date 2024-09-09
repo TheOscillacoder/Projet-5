@@ -56,7 +56,7 @@
         return;
       }
     });
-
+// code ci-dessous pour la gestion des flèches "précédent/suivant dans la galerie"
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
@@ -64,6 +64,7 @@
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+    //
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
