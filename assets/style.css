@@ -90,9 +90,6 @@ body {
 	font-size: 14px;
 }
 
-/* #gallery {
-min-height: 100vh; */
-
 .title {
 	text-align: center;
 	padding-block: 2em;
@@ -100,13 +97,14 @@ min-height: 100vh; */
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #BEB45A;
-	border-radius:0 ;
+.nav-pills .nav-link.active-tag,.nav-pills .show>.nav-link {
+    color: #000;
+    background-color: #beb45a;
+    border-radius: 0
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer
 }
 .item-column {
 	position: relative;
@@ -213,8 +211,15 @@ min-height: 100vh; */
 }
 .form-container {
 	flex : 2;
-
 }
+
+.footer-contact-details {
+	background-color: #F6D2B8;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
